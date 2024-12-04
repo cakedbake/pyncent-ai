@@ -181,10 +181,12 @@ for message in channel_messages:
 								max_tokens=1024,
 								temperature=0
 							)
-				response = response.choices[0].message.content
-				attachment.description = response
-							# Store the description in a dictionary for future use
-							# attachmentCache[attachment.url] = attachment.description
+						except:
+							continue
+						response = response.choices[0].message.content
+						attachment.description = response
+						# Store the description in a dictionary for future use
+						# attachmentCache[attachment.url] = attachment.description
 						except Exception as error:
 							if not attachment.description:
 								attachment.description = str(error)
