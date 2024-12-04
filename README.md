@@ -1,3 +1,5 @@
+# ‼️ NOT YET FUNCTIONAL ‼️
+
 # Direct port of [cakedbake/vincent-ai](https://github.com/cakedbake/vincent-ai/) to Python.
 
 # Not implemented:
