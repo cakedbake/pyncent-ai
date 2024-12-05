@@ -129,8 +129,8 @@ f"""- You are an AI assistant, based on the "{os.environ["CHAT_MODEL"]}" model, 
 
 			content += message.created_at.isoformat() + "\n"
 			content += f"<@{message.author.name}#{message.author.discriminator}>"
-			if message.author.nick:
-				content += f" ({message.author.nick})"
+#			if message.author.nick:
+#				content += f" ({message.author.nick})"
 			if message.author.bot:
 				content += " (BOT)"
 			if message.edited_at:
